@@ -1,0 +1,10 @@
+.table {
+    background-color: #666;
+}
+.table tr td {
+    width: 150px;
+    height: 150px;
+    font-size: 90px;
+    text-align: center;
+    border: 1px solid white;
+}
