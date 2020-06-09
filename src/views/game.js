@@ -4,12 +4,13 @@ import TableGame from './table-game';
 
 const Game = () => {
     const [state, setState] = useState({
-        player1: "aa",
-        player2: "bb",
-        jugada: "X",
+        player1: null,
+        player2: null,
+        jugada: null,
     })
 
     const handleChange = e => {
+        console.log("desde handleChange");
         let data = {
             [e.target.name]: e.target.value
         }
@@ -19,6 +20,7 @@ const Game = () => {
     }
 
     const handleClick = e => {
+        console.log("desde handleClick");
         let data = {
             [e.target.name]: e.target.innerHTML
         }
@@ -28,6 +30,7 @@ const Game = () => {
     }
 
     const handleChangeJugada = () => {
+        console.log("desde handleJugada");
         let data = {
             jugada: state.jugada === "X" ? "O" : "X"
         }
